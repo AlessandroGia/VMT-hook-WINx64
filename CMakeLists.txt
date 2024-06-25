@@ -3,4 +3,6 @@ project(VMT_hook_WINx64)
 
 set(CMAKE_CXX_STANDARD 26)
 
-add_executable(VMT_hook_WINx64 main.cpp)
+include_directories(include TestClass/BaseClass TestClass/DerivedClass)
+
+add_executable(VMT_hook_WINx64 src/main.cpp TestClass/BaseClass/BaseClass.cpp TestClass/DerivedClass/DerivedClass.cpp)
