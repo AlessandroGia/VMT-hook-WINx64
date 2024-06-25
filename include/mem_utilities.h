@@ -10,7 +10,7 @@ template <typename T>
 void writeMem(LPVOID adr, T val); // write to address in memory
 
 template <typename T>
-void protectMem(DWORD* adr, DWORD prot, DWORD* oldProt); // change protection page
+void protectMem(DWORD* adr, DWORD prot, DWORD* oldProt); // change protection page and write old protection page
 
 #include "mem_utilities_impl.h"
 
